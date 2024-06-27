@@ -25,7 +25,6 @@ namespace Desafio2Boher.Database
                 SqlCommand command = new SqlCommand(query, conn);
                 conn.Open();
                 command.Parameters.AddWithValue("id", userId);
-
                 return command.ExecuteNonQuery() > 0;
             }
 
